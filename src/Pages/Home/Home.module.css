@@ -1,0 +1,65 @@
+
+
+.home_container{}
+
+.home_inner_content{
+
+}
+
+.hero_container{}
+.hero_inner_content{
+    background:linear-gradient(90deg, rgba(33, 37, 32, 0.171) 0%, rgba(60, 109, 75, 0.493) 48%, rgba(15, 19, 17, 0.493) 100%), url(..//..//assets/IMG/css_project_1_img/the-beautiful-mosque-at-night-ai-generated-free-photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 180px 0px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 200px;
+}
+
+.hero_text{
+}
+.hero_text h5{
+    color: rgba(52, 219, 155, 0.89);
+}
+.hero_text h1{
+    font-size: 35px;
+    margin: 25px 0px;
+    line-height: 45px;
+
+
+}
+.hero_text p{
+    font-size: 15px;
+    color: #ffffffd3;
+}
+.hero_text a button{
+    margin-top: 30px;
+    padding: 7px 15px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: rgb(43, 181, 115);
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.hero_text a button:hover{
+    background-color: rgb(33, 148, 92);
+    box-shadow: 3px 3px 15px rgb(43, 181, 115);
+}
+
+.hero_img{
+   
+}
+.hero_img img{
+    border: 13px double rgba(32, 153, 92, 0.726);
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
