@@ -5,6 +5,7 @@ import { useState } from "react";
 
 import { IoMenu, IoCloseSharp } from "react-icons/io5";
 import { TbHeartbeat } from "react-icons/tb";
+import { FaMosque } from "react-icons/fa";
 
 const NavBar = () => {
   const navRef = useRef();
@@ -24,7 +25,7 @@ const NavBar = () => {
         <div className={styles.NavBar_inner_container}>
           <div className={styles.NavBar_inner_content}>
             <div className={styles.logo}>
-              <h2>CSS PROJECT-2</h2>
+              <h2> <FaMosque /> CSS-2</h2>
             </div>
             {/* <div className={styles.nav_menu}> */}
             <nav

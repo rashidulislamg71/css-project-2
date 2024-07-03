@@ -1,0 +1,145 @@
+.services_container {
+  padding: 100px 60px;
+  background-color: #f1f0f0;
+  text-align: center;
+}
+
+h4 {
+  color: rgb(43, 181, 115);
+  font-size: 25px;
+}
+h2{
+    font-size: 30px;
+}
+
+.services_inner_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.single_services {
+  height: 330px;
+  width: 260px;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 70px;
+  background-color: rgba(30, 182, 144, 0.096);
+  text-align: left;
+  transition:  .8s;
+  cursor: pointer;
+}
+.single_services .services_icon {
+  font-size: 50px;
+  color: rgb(43, 181, 115);
+}
+
+.single_services:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.single_services .services_quran_icon {
+  font-size: 43px;
+  padding-top: 6px;
+}
+.single_services .services_title {
+  color: #000000ef;
+}
+.single_services .services_text {
+  margin: 20px 0px;
+  color: #494848d8;
+  line-height: 22px;
+}
+
+.services_see_more_btn {
+  text-align: center;
+  margin-top: 28px;
+}
+
+.services_see_more_btn button {
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  background-color: rgb(43, 181, 115);
+  border-radius: 2px;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 17px;
+}
+
+.services_see_more_btn button:hover {
+  box-shadow: 2px 2px 15px rgb(43, 181, 115);
+  background-color: rgb(23, 155, 91);
+}
+
+/*Responsive CSS */
+
+@media (max-width: 1024px) {
+  .services_container {
+    padding: 80px 30px;
+  }
+
+  .services_inner_content {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .services_container {
+    padding: 70px 30px;
+  }
+
+  .services_inner_content {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .single_services {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services_container {
+    padding: 60px 15px;
+  }
+
+  .services_inner_content {
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+
+  .single_services {
+    width: 100%;
+    padding: 30px;
+    margin-top: 40px;
+  }
+  .single_services .services_text {
+    line-height: 29px;
+  }
+  .services_see_more_btn {
+    margin-top: 30px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .services_container {
+    padding: 50px 15px;
+  }
+
+
+
+  .single_services .services_text {
+    line-height: 20px;
+  }
+  .services_see_more_btn {
+    margin-top: 30px;
+  }
+}

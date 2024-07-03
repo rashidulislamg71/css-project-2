@@ -1,6 +1,6 @@
 .NavBar_container {
   position: relative;
-  color: #fff;
+  
 }
 
 
@@ -17,6 +17,8 @@
 
 .logo h2 {
   color: rgb(7, 145, 122);
+  display: flex;
+  gap: 2px;
 }
 
 /* Nav Mnue CSS Start*/
@@ -29,10 +31,12 @@
   text-decoration: none;
   font-size: 17px;
   transition: 0.3s;
+  color: rgb(37, 223, 182);
 }
 
 .nav_menu a:hover {
   color: rgb(8, 148, 118);
+
 }
 .nav_menu a:active {
   color: gray;
@@ -47,6 +51,7 @@
   justify-content: center;
   align-items: center;
   gap: 60px;
+  color: rgb(37, 223, 182);
 }
 
 .nav_donation_btn a {

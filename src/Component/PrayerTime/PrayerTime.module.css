@@ -1,55 +1,50 @@
-
-
-.prayerTime_container{
-    padding: 80px 70px;
-    background-color: #ffff;
+.prayerTime_container {
+    position: relative;
+  padding: 80px 70px;
+  background-color: #ffff;
 }
 
-.prayerTime_inner_content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.prayerTime_inner_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.prayerTime_text_left {}
-
-.prayerTime_text_left P{
-    color: rgb(43, 181, 115);
-    font-weight: bold;
-    
-
-}
-.prayerTime_text_left h3{
-    margin: 0px 0px 25px 0px;
-    font-size: 25px;
-    border-bottom: 1px solid rgb(201, 212, 207);
-    padding: 3px 0px;
-    text-transform: uppercase;
-}
-.prayerTime_text_left .english_date{
-    color: #000;
-    margin:15px 0px 30px 0px;
-    border: none;
-}
-.prayerTime_text_left q{
-    font-size: 20px;
-    font-weight: bold;
-}
-.prayerTime_text_left span{
-    font-size: 18px;
-    color: rgb(18, 141, 80);
-
+.prayerTime_text_left {
 }
 
+.prayerTime_text_left P {
+  color: rgb(43, 181, 115);
+  font-weight: bold;
+}
+.prayerTime_text_left h3 {
+  margin: 0px 0px 25px 0px;
+  font-size: 25px;
+  border-bottom: 1px solid rgb(201, 212, 207);
+  padding: 3px 0px;
+  text-transform: uppercase;
+}
+.prayerTime_text_left .english_date {
+  color: #000;
+  margin: 15px 0px 30px 0px;
+  border: none;
+}
+.prayerTime_text_left q {
+  font-size: 20px;
+  font-weight: bold;
+}
+.prayerTime_text_left span {
+  font-size: 18px;
+  color: rgb(18, 141, 80);
+}
 
-
-.prayerTime_text_right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 600px;
+.prayerTime_text_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 600px;
 }
 
 .prayer_box {
@@ -62,35 +57,104 @@
   height: 180px;
   border-radius: 5px;
   background-color: #f0ebee63;
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
 
-.prayer_box:hover{
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+.prayer_box:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
-.box_content_1{
+.box_content_1 {
+  width: 100%;
+  background-color: rgba(43, 181, 114, 0.87);
+  padding: 13px 0px;
+  text-align: center;
+  color: #ffff;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.box_content_2 {
+  text-align: center;
+}
+
+.box_content_2 h3 {
+  margin-bottom: 50px;
+  color: #000000c0;
+}
+.box_content_2 p {
+  background-color: rgba(43, 181, 114, 0.87);
+  padding: 3px 10px;
+  border-radius: 1px;
+  color: #fff;
+}
+
+
+
+
+
+.start{
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    clip-path: polygon(  50% 0%, 
+    61% 35%, 
+    98% 35%, 
+    68% 57%, 
+    79% 91%, 
+    50% 70%, 
+    21% 91%, 
+    32% 57%, 
+    2% 35%, 
+    39% 35%);
+}
+
+
+
+
+/*Responsive CSS */
+
+@media (max-width: 1024px) {
+  .prayerTime_container {
+    padding: 80px 30px;
+  }
+
+  .prayerTime_inner_content {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .prayerTime_text_left {
+    width: 80%;
+  }
+  .prayerTime_text_right {
+    gap: 70px;
+    max-width: 650px;
+  }
+  
+}
+@media (max-width: 480px) {
+  .prayerTime_container {
+    padding: 60px 15px;
+  }
+
+  .prayerTime_inner_content {
+    gap: 50px;
+  }
+
+  .prayerTime_text_left {
     width: 100%;
-    background-color: rgba(43, 181, 114, 0.87);
-    padding: 13px 0px;
-    text-align: center;
-    color: #ffff;
-    border-radius: 5px 5px 0px 0px;
-    
-}
-
-.box_content_2{
-    text-align: center;
-}
-
-.box_content_2 h3{
-    margin-bottom: 50px;
-    color: #000000c0;
-}
-.box_content_2 p{
-    background-color: rgba(43, 181, 114, 0.87);
-    padding: 3px 10px;
-    border-radius: 1px;
-    color: #fff;
+  }
+  .prayerTime_text_right {
+    gap: 40px;
+  }
+  .prayer_box{
+    width: 100%;
+  }
+  
 }

@@ -1,6 +1,8 @@
 import styles from "./Home.module.css";
 import quranReadingMan from "..//..//assets/IMG/css_project_1_img/quran man.png"
 import PrayerTime from "../../Component/PrayerTime/PrayerTime";
+import VideoPlayer from "../../Component/VideoPlayer/VideoPlayer";
+import Service from "../../Component/Service/Service";
 
 const Home = () => {
   return (
@@ -32,6 +34,9 @@ const Home = () => {
         </div>
       </div>
       <PrayerTime />
+
+      <Service />
+
     </section>
   );
 };
