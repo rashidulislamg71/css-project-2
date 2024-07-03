@@ -1,65 +1,175 @@
-
-
-.home_container{}
-
-.home_inner_content{
-
+.home_container {
 }
 
-.hero_container{}
-.hero_inner_content{
-    background:linear-gradient(90deg, rgba(33, 37, 32, 0.171) 0%, rgba(60, 109, 75, 0.493) 48%, rgba(15, 19, 17, 0.493) 100%), url(..//..//assets/IMG/css_project_1_img/the-beautiful-mosque-at-night-ai-generated-free-photo.jpg);
+.home_inner_content {
+}
+
+.hero_container {
+}
+.hero_inner_content {
+  background: linear-gradient(
+      90deg,
+      rgba(33, 37, 32, 0.171) 0%,
+      rgba(60, 109, 75, 0.493) 48%,
+      rgba(15, 19, 17, 0.493) 100%
+    ),
+    url(..//..//assets/IMG/css_project_1_img/the-beautiful-mosque-at-night-ai-generated-free-photo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 180px 0px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 200px;
+}
+
+.hero_text {
+}
+.hero_text h5 {
+  color: rgba(52, 219, 155, 0.89);
+}
+.hero_text h1 {
+  font-size: 35px;
+  margin: 25px 0px;
+  line-height: 45px;
+}
+.hero_text p {
+  font-size: 15px;
+  color: #ffffffd3;
+  max-width: 500px;
+}
+.hero_text a button {
+  margin-top: 30px;
+  padding: 7px 15px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  background-color: rgb(43, 181, 115);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hero_text a button:hover {
+  background-color: rgb(33, 148, 92);
+  box-shadow: 3px 3px 15px rgb(43, 181, 115);
+}
+
+.hero_img {
+}
+.hero_img img {
+  border: 13px double rgba(32, 153, 92, 0.726);
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+
+/*Responsive CSS*/
+
+@media (max-width: 1024px) {
+  .hero_inner_content {
+    padding: 80px 40px;
+    gap: 130px;
+  }
+
+  .hero_text,
+  .hero_img {
+    margin-top: 100px;
+  }
+  .hero_text h5 {
+    color: rgba(52, 219, 155, 0.89);
+  }
+
+  .hero_text h1 {
+    font-size: 25px;
+    margin: 15px 0px;
+    line-height: 35px;
+  }
+
+  .hero_img img {
+    border: 10px double rgba(32, 153, 92, 0.726);
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero_inner_content {
+    padding: 80px 30px;
+    gap: 80px;
+  }
+
+  .hero_text,
+  .hero_img {
+    margin-top: 80px;
+  }
+
+  .hero_text h1 {
+    font-size: 25px;
+    margin: 15px 0px;
+    line-height: 35px;
+  }
+
+  .hero_img img {
+    border: 10px double rgba(32, 153, 92, 0.726);
+    height: 230px;
+    width: 230px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .hero_inner_content {
+    padding: 10px 20px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 180px 0px;
-    color: #fff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 200px;
-}
+    background-size: cover;
+    padding: 100px 0px;
+    gap: 0px;
+  }
 
-.hero_text{
-}
-.hero_text h5{
-    color: rgba(52, 219, 155, 0.89);
-}
-.hero_text h1{
-    font-size: 35px;
-    margin: 25px 0px;
-    line-height: 45px;
-
-
-}
-.hero_text p{
-    font-size: 15px;
-    color: #ffffffd3;
-}
-.hero_text a button{
+  .hero_text {
     margin-top: 30px;
-    padding: 7px 15px;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    border-radius: 2px;
-    background-color: rgb(43, 181, 115);
-    color: #fff;
-    cursor: pointer;
-    transition: .5s;
+    padding-left: 15px;
+    max-width: 350px;
+  }
+
+  .hero_text h1 {
+    font-size: 30px;
+    margin: 30px  0px;
+    line-height: 35px;
+  }
+
+  .hero_img img {
+    display: none;
+  }
 }
 
-.hero_text a button:hover{
-    background-color: rgb(33, 148, 92);
-    box-shadow: 3px 3px 15px rgb(43, 181, 115);
-}
+@media (max-width: 320px) {
+  .hero_inner_content {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+    gap: 0px;
+  }
 
-.hero_img{
-   
-}
-.hero_img img{
-    border: 13px double rgba(32, 153, 92, 0.726);
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
+  .hero_text {
+    margin-top: 20px;
+    padding-left: 15px;
+    max-width: 300px;
+  }
+
+  .hero_text h1 {
+    font-size: 25px;
+    margin: 20px  0px;
+    line-height: 25px;
+  }
+
+  .hero_img img {
+    display: none;
+  }
 }

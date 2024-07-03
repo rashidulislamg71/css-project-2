@@ -1,5 +1,6 @@
 import styles from "./Home.module.css";
 import quranReadingMan from "..//..//assets/IMG/css_project_1_img/quran man.png"
+import PrayerTime from "../../Component/PrayerTime/PrayerTime";
 
 const Home = () => {
   return (
@@ -14,8 +15,8 @@ const Home = () => {
                  Allah Who has Created</h1>
 
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing <br /> elit.
-                  Itaque, quisquam. Id optio doloribus veritatis numquam <br />
+                  Lorem ipsum dolor, sit amet consectetur adipisicing  elit.
+                  Itaque, quisquam. Id optio doloribus veritatis numquam 
                   recusandae aperiam architecto eaque ratione.
                 </p>
 
@@ -30,6 +31,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <PrayerTime />
     </section>
   );
 };
